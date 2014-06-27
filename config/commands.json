@@ -1,0 +1,32 @@
+{
+	"P": {
+		"description": "Position",
+		"method": "position"
+	},
+    "F": {
+        "description": "Position",
+        "method": "inc"
+    },
+    "R": {
+        "description": "Position",
+        "method": "rotate",
+        "set": ["#{x1} = #{x}", "#{y1} = #{y}"]
+    },
+    "L": {
+        "description": "Position",
+        "method": "rotate",
+        "set": ["#{x1} = #{x}", "#{y1} = #{y}"]
+    },
+	"V": {
+		"description": "Draw vertical line",
+		"method": "position",
+		"set": ["#{x1} = #{x}"],
+		"rules": ["#{x1} == #{x}", "#{y0} <= #{y}", "#{y} <= #{y1}"]
+	},
+	"H": {
+		"description": "Draw horizontal line",
+		"method": "position",
+		"set": ["#{y1} = #{y}"],
+		"rules": ["#{y1} == #{y}", "#{x0} <= #{x}", "#{x} <= #{x1}"]
+	}
+}
