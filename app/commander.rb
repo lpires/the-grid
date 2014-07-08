@@ -72,41 +72,6 @@ class Commander
   end
 
   private
-  #def moving? type, params
-  #  x, y = params['x'], params['y']
-  #  map = params['map']
-  #
-  #  return params[type] if(params['key'] != :F)
-  #
-  #  steps = 1
-  #  orientation = map[x,y]
-  #  case orientation
-  #    when :N
-  #      return type == :x ? x : y + steps
-  #    when :S
-  #      return type == :x ? x : y - steps
-  #    when :W
-  #      return type == :x ? x + steps : y
-  #    when :E
-  #      return type == :x ? x - steps : y
-  #  end
-  #end
-
-  #def change_orientation? key, map, params
-  #  orientation = map[params['x0'].to_i,params['y0'].to_i]
-  #  p ">>>>>>>> orientation #{orientation}"
-  #  return orientation if orientation == :F
-  #  case orientation
-  #    when :N
-  #      return key == :R ? :E : :W
-  #    when :S
-  #      return key == :R ? :W : :E
-  #    when :W
-  #      return key == :R ? :N : :S
-  #    when :E
-  #      return key == :R ? :S : :N
-  #  end
-  #end
 
   def default_create_actions
     min_m, max_n = 1, 250 
